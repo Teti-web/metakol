@@ -1,0 +1,157 @@
+@import './../../style/variables';
+@import './../../style/brekpoint';
+
+.header{
+    margin: 0;
+    padding: 0 10px 0 0;
+    width: 100%;
+
+    @include mobile{
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+.logo{
+   width: 162px;
+   height: 94px;
+   margin: 0;
+   padding: 0;
+    overflow: hidden;
+   
+    img{
+        width: 100%;
+
+        @include tablet{
+            width: $container-width-md;
+        }
+    }
+
+    a{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding: 1rem;
+
+        @include mobile{
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            height: 65vh;
+            top: 0;
+            left:-100%;
+            align-items: center;
+            justify-content: center;
+            background: $bg-transparent;
+            transition: 0.5s ease-in;
+        }
+    }
+
+    li{
+        display: inline-block;
+        position: relative;
+      a{
+        padding: 7px 30px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $font-title;
+        color: $white;
+        text-decoration: none;
+        &:hover{
+            border-radius: 15px;
+            background: $button;
+        }
+
+        @include tablet{
+            padding: 7px 25px;
+        }
+
+        @include mobile{
+            font-size: 2rem;
+        }
+      }
+      .active{
+        border-radius: 15px;
+        background: $button;
+       }
+      @include mobile{
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+       }
+
+       button{
+        margin-left: 20px;
+        width: 30px;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        img{
+            width: 100%;
+        }
+       }
+
+       .dropdown{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+       }
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      background: transparent;
+      text-align: left;
+      padding-top: 10px;
+
+      @include mobile{
+        padding-top: 35px;
+      }
+      
+    }
+
+    .icon {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    @include mobile{
+        .active {
+            left: 0;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+
+    @include mobile{
+        display: block;
+        z-index: 1000;
+    }
+}

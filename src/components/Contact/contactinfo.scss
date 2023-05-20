@@ -1,0 +1,41 @@
+@import '../../style/variables';
+@import '../../style/brekpoint';
+
+
+
+.info{
+    display: none;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        width: 100%;
+        background: $bg-transparent;
+        z-index: 2;
+        text-align: center;
+        padding: 20px 15px;
+        margin-top: 75px;
+    }
+
+    h2{
+        @include mobile{
+        font-size: 28px;
+        font-family: $font-title;
+        color: $white;
+        }
+    }
+
+    p{
+        @include mobile{
+            font-size: 18px;
+            line-height: 1.3;
+            font-family: $font-title;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../style/brekpoint';
+@import '../../style/variables';
+
+.table{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container{
+        width: $container-width-lg;
+        padding: 10px 40px;
+        border-radius: 20px;
+        background-color: $button;
+        text-align: center;
+        @include mobile{
+            width: $container-width-sm;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+            th {
+                padding: 10px 0;
+                font-size: 18px;
+                font-weight: 700;
+                border-bottom: 1px solid $white;
+            }
+
+            tr {
+                padding-bottom: 15px;
+              }
+            td {
+                padding: 15px 10px 0;
+                text-align: center;
+              }
+        }
+    }
+}

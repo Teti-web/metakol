@@ -1,0 +1,61 @@
+@import '../../style/brekpoint';
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.notfound{
+  height: 90vh;
+  display: flex;
+  font-family: $font-title;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $bg;
+  color:  #fafafa;
+  perspective: 1200px;
+
+
+  &-title {
+    -webkit-animation: swing $speed infinite alternate ease-in-out;
+            animation: swing $speed infinite alternate ease-in-out;
+    font-size: clamp(5rem, 40vmin, 20rem);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1rem;
+    transform: translate3d(0, 0, 0vmin);
+    background: radial-gradient( $lit-header, $header 45%)  100%/200% 200%;
+    background-clip: text;
+    color: transparent;
+  
+  &:after {
+    animation: swing $speed infinite alternate ease-in-out;
+    content: "404";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:$shadow;
+    filter: blur(1.5vmin);
+    transform: scale(1.05) translate3d(0, 12%, -10vmin);
+  }
+}
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.05rem;
+  }
+ 
+  .info404 {
+    text-align: center;
+    line-height: 1.5;
+    max-width: clamp(16rem, 90vmin, 25rem);
+  h2 {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+
+}
+  

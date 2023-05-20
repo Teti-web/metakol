@@ -1,0 +1,151 @@
+@import '../../style/variables';
+@import '../../style/brekpoint';
+
+.contact{
+    top:0;
+    left:0;
+    margin-top:35px;
+    margin-bottom: 70px;
+    width: 100%;
+   
+    background-image: url(../../assets/backContakt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mobile{
+        margin-bottom: 15px;
+    }
+
+    &-container{
+        position: relative;
+
+    }
+
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        top:-5%;
+        right: 8%;
+        row-gap: 25px;
+        position: absolute;
+        width: 350px;
+        height: 590px;
+        background: $bg-transparent;
+        z-index: 2;
+        padding-right: 15px;
+
+        padding-left: 52px;
+        padding-top: 95px;
+        // padding-bottom: 100px;
+
+        h2{
+            font-size: 42px;
+            font-family: $font-title;
+            color: $white;
+
+            @include tablet{
+                font-size: 36px;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-family: $font-title;
+            color: $white;
+            line-height: 1.5;
+        }
+
+        a{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: $font-text;
+            color: $white;
+        }
+
+        @include tablet{
+            right: 1%;
+            row-gap: 25px;
+            width: 45%;
+            height: 650px;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+
+    &-content{
+        width: 60%;
+        padding-right: 4rem;
+
+        h2{
+            padding: 55px 0 25px;
+            font-size: 42px;
+            font-family: $font-title;
+            color: #0770D1;
+
+            @include tablet{
+                font-size: 30px;
+                line-height: 1.3;
+            }
+            @include mobile{
+                font-size: 28px;
+                text-align: center;
+            }
+
+        }
+        
+        input, textarea{
+            width: 100%;
+            margin: 10px 0;
+            outline: 0;
+            padding: .5rem 1rem;
+            border-radius: 15px;
+            border: 0;
+
+            &[type="submit"]{
+                width: 260px;
+                margin-bottom: 3rem;
+
+                @include tablet{
+                    width: 60%;
+                } 
+
+                @include mobile{
+                    display: block;
+                    margin: 10px auto;
+                }
+                
+            }
+          &:placeholder{
+            font-family: $font-title;
+            font-size: 18px;
+        }
+
+
+        textarea{
+            padding: 12px 20px;
+            resize: none;
+        }
+    }
+
+
+        .oneLine{
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 49%;
+            }
+        }
+
+        @include mobile{
+           width: 100%;
+           padding-right: 0;
+           padding-bottom: 10px;
+        }
+
+    }
+}
