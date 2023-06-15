@@ -8,10 +8,10 @@ import 'swiper/css';
 import "swiper/css/effect-fade";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Slide1 from '../../assets/slider1.jpg';
-import Slide2 from '../../assets/slider2.jpg';
-import Slide3 from '../../assets/slider3.jpg';
-import Slide4 from '../../assets/intro1.jpg';
+import Slide1 from '../../assets/slider1.webp';
+import Slide2 from '../../assets/slider2.webp';
+import Slide3 from '../../assets/slider3.webp';
+import Slide4 from '../../assets/intro1.webp';
 
 const Intro = (props) => {
   return (
@@ -29,10 +29,11 @@ const Intro = (props) => {
              spaceBetween={30}
              effect={"fade"}
              className='slider-container'>
-                  <SwiperSlide><img src={Slide1}/></SwiperSlide>
-                  <SwiperSlide><img src={Slide2}/></SwiperSlide>
-                  <SwiperSlide><img src={Slide3}/></SwiperSlide>
-                  <SwiperSlide><img src={Slide4}/></SwiperSlide>
+                  <SwiperSlide><img src={Slide4} alt="coal"/></SwiperSlide>
+                  <SwiperSlide><img src={Slide1} alt="coal"/></SwiperSlide>
+                  <SwiperSlide><img src={Slide2} alt="coal"/></SwiperSlide>
+                  <SwiperSlide><img src={Slide3} alt="coal"/></SwiperSlide>
+                  
              </Swiper>
           </div>
          <div className=' container intro-container'>

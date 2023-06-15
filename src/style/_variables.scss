@@ -1,17 +1,18 @@
 $black: #000;
 $white: #fff;
-$bg: #1b1b1b;
-$black-transparent: rgba(0, 0, 0, 0.6);
+$bg: #101010;
+$black-transparent: rgba(0, 0, 0, 0.76);
 $bg-header:rgba(138, 136, 136, 0.419);
 $bg-transparent:#0364bec7;
 $button: #1B3C75;
 $title: #3040ff;
+$title-baner: #2d37b7;
 $bg-footer:#1D284F;
 $bg-gradient:linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);
 
 
 $font-title: 'Lora', serif;
-$font-text:'Roboto', sans-serif;
+$font-text:'Poppins', sans-serif;
 $font-lato: 'Lato', sans-serif;
 
 
@@ -19,7 +20,7 @@ $speed: 2s;
 $header:#7a7a7a;
 $shadow: #000;
 $color: #fafafa;
-$lit-header: #e6e6e6;
+$lit-header: rgb(234 239 246 / 78%);;
 
 $container-width-lg: 75%;
 $container-width-md: 86%;

@@ -8,11 +8,12 @@ const ContactInfo = (props) => {
             <h2>{props.contact}</h2>
                 <p>{props.contactText}</p>
 
-                <a href="mailto:metakol@gmail.com">metakol@gmail.com</a>
-                <a href="tel:+48 000 000 000">+48 000 000 000</a>
-
+                <a href="mailto:m.sharma@metakol.pl">m.sharma@metakol.pl</a>
+                <a href="tel:+48 790 255 932">+48 790 255 932</a>
+                <a href="tel:+48 537 928 828">+48 537 928 828</a>
+                <a href="tel:+48 739 079 989">+48 739 079 989</a>
                 <address>
-                ul. Kukiełki,7 <br/> <br/>
+                ul. Kukiełki 7 <br/> <br/>
                 02-207, Warszawa
                 </address>
             </div>

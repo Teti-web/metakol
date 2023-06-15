@@ -9,9 +9,8 @@
     @include mobile{
         display: flex;
         flex-direction: column;
-        row-gap: 25px;
         width: 100%;
-        background: $bg-transparent;
+        background: $button;
         z-index: 2;
         text-align: center;
         padding: 20px 15px;
@@ -20,21 +19,24 @@
 
     h2{
         @include mobile{
-        font-size: 28px;
+        font-size: 24px;
         font-family: $font-title;
         color: $white;
+        margin-bottom: 7px;
         }
     }
 
     p{
         @include mobile{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.3;
             font-family: $font-title;
+            margin-bottom: 7px;
         }
     }
 
     a{
+        padding: 10px;
         text-decoration: none;
         color: $white;
     }

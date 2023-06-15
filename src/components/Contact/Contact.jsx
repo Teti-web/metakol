@@ -9,7 +9,7 @@ const Contact = (props) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_i0tluko', 'template_3ahpk8l', form.current, '6gdi57kRnkjSyCwzn')
+    emailjs.sendForm('service_8w8qdjf', 'template_3ahpk8l', form.current, 'D2R_YF6UKszBPIAbK')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -25,9 +25,10 @@ const Contact = (props) => {
             <h2>{props.contact}</h2>
                 <p>{props.contactText}</p>
 
-                <a href="mailto:metakol@gmail.com">metakol@gmail.com</a>
-                <a href="tel:+48 000 000 000">+48 000 000 000</a>
-
+                <a href="mailto:m.sharma@metakol.pl">m.sharma@metakol.pl</a>
+                <a href="tel:+48 790 255 932">+48 790 255 932</a>
+                <a href="tel:+48 537 928 828">+48 537 928 828</a>
+                <a href="tel:+48 739 079 989">+48 739 079 989</a>
                 <address>
                 ul. Kukiełki,7 <br/> <br/>
                 02-207, Warszawa

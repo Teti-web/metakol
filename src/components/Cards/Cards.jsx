@@ -2,8 +2,8 @@ import React from 'react';
 import './cardStyle.scss';
 import Card from './Card';
 import { useTranslation } from 'react-i18next';
-import COAL from '../../assets/coal.png';
-import COKE from '../../assets/coke.png';
+import COAL from '../../assets/coal.webp';
+import COKE from '../../assets/coke.webp';
 
 const Cards = () => {
     const { t, i18n } = useTranslation();

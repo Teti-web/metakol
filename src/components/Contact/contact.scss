@@ -8,7 +8,7 @@
     margin-bottom: 70px;
     width: 100%;
    
-    background-image: url(../../assets/backContakt.png);
+    background-image: url(../../assets/backContakt.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 
         @include tablet{
             right: 1%;
-            row-gap: 25px;
+            row-gap: 15px;
             width: 45%;
             height: 650px;
         }
@@ -85,7 +85,7 @@
             padding: 55px 0 25px;
             font-size: 42px;
             font-family: $font-title;
-            color: #0770D1;
+            color: $white;
 
             @include tablet{
                 font-size: 30px;

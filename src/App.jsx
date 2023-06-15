@@ -1,6 +1,6 @@
 import './App.scss';
 import './style/pageStyle.scss';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import HomePage from './page/homePage/HomePage';
@@ -12,14 +12,21 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+ 
+  const handleLanguageChange = (lng) => {
+    i18n.changeLanguage(lng);
+    console.log('Click change language', lng);
+  };
   return (
+    
     <>
-
-    <Header
+     <Header
       about={t("about")}
       offert={t("offert")}
-      contact={t("contact")}/>
+      contact={t("contact")}
+      changeLanguageEN={() => handleLanguageChange('en')}
+      changeLanguagePL={() => handleLanguageChange('pl')}/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/about' element={<AboutPage/>}/>
