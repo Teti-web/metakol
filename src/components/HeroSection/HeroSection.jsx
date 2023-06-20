@@ -15,7 +15,10 @@ const HeroSection = (props) => {
            </div>
            
            <div className='heroSection-image'>
+              <picture>
+              <source media='(max-width: 600px)' srcSet={props.mob} />
               <img src={props.imgName} alt="image" />
+              </picture>
            </div>
             
         </div>

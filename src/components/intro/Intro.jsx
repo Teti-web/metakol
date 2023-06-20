@@ -12,6 +12,10 @@ import Slide1 from '../../assets/slider1.webp';
 import Slide2 from '../../assets/slider2.webp';
 import Slide3 from '../../assets/slider3.webp';
 import Slide4 from '../../assets/intro1.webp';
+import Slide1Mobile from '../../assets/slider1mobile.webp'
+import Slide2Mobile from '../../assets/slider2mobile.webp'
+import Slide3Mobile from '../../assets/slider3mobile.webp'
+import Slide4Mobile from '../../assets/intro1mobile.webp'
 
 const Intro = (props) => {
   return (
@@ -29,10 +33,30 @@ const Intro = (props) => {
              spaceBetween={30}
              effect={"fade"}
              className='slider-container'>
-                  <SwiperSlide><img src={Slide4} alt="coal"/></SwiperSlide>
-                  <SwiperSlide><img src={Slide1} alt="coal"/></SwiperSlide>
-                  <SwiperSlide><img src={Slide2} alt="coal"/></SwiperSlide>
-                  <SwiperSlide><img src={Slide3} alt="coal"/></SwiperSlide>
+                    <SwiperSlide className='slider-image'>
+                    <picture>
+                      <source media="(max-width: 600px)" srcSet={Slide4Mobile} />
+                      <img src={Slide4} alt="coal" />
+                      </picture>
+                    </SwiperSlide>
+                  <SwiperSlide className='slider-image'>
+                    <picture>
+                    <source media="(max-width: 600px)" srcSet={Slide1Mobile} />
+                    <img src={Slide1} alt="coal" />
+                    </picture>
+                    </SwiperSlide>
+                  <SwiperSlide className='slider-image'>
+                  <picture>
+                    <source media="(max-width: 600px)" srcSet={Slide2Mobile} />
+                    <img src={Slide2} alt="coal" />
+                    </picture>
+                    </SwiperSlide>
+                  <SwiperSlide className='slider-image'>
+                     <picture>
+                    <source media="(max-width: 600px)" srcSet={Slide3Mobile} />
+                    <img src={Slide3} alt="coal" />
+                    </picture>
+                    </SwiperSlide>
                   
              </Swiper>
           </div>

@@ -9,12 +9,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html, body{
+  height: 100%;
+}
 body{
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: $bg;
+  display: flex;
+  flex-direction: column;
   font-family: $font-text;
   color: $white;
 }
-
 .container{
   margin: 0 auto;
   padding: 0;

@@ -7,7 +7,10 @@ const Card = (props) => {
             <figure className='card-thumb'>
                 <div className='card-image'>
                   {/* img h=210px */}
+                <picture>
+                <source media="(max-width: 600px)" srcSet={props.imageMob} />   
                <img src={props.image} alt={props.titleCard}/>
+               </picture>
                </div>
                <figcaption className='card-caption'>
                    <h2 className='card-title'>{props.titleCard}</h2>

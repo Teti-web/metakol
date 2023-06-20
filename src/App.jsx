@@ -1,6 +1,6 @@
 import './App.scss';
 import './style/pageStyle.scss';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import HomePage from './page/homePage/HomePage';
@@ -13,20 +13,19 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   const { t, i18n } = useTranslation();
- 
+
   const handleLanguageChange = (lng) => {
     i18n.changeLanguage(lng);
-    console.log('Click change language', lng);
   };
   return (
     
-    <>
+   <>
      <Header
       about={t("about")}
       offert={t("offert")}
       contact={t("contact")}
       changeLanguageEN={() => handleLanguageChange('en')}
-      changeLanguagePL={() => handleLanguageChange('pl')}/>
+      changeLanguagePL={() => handleLanguageChange('pl')}/> 
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/about' element={<AboutPage/>}/>
@@ -41,6 +40,7 @@ function App() {
     contact={t("contact")}
     footcontact={t("footcontact")}
     adrsfirm={t("adrsfirm")}/>
+    
     </>
   );
 }

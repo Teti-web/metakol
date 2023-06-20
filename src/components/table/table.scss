@@ -13,23 +13,36 @@
         border-radius: 20px;
         background-color: $button;
         text-align: center;
-        @include mobile{
+
+        @include tablet{
             width: $container-width-sm;
             font-size: 14px;
-            overflow: hidden;
-            padding: 10px 20px;
+            overflow-x: scroll;;
+        }
+
+        @include mobile{
+            width: $container-width-sm;
+            font-size: 12px;
+            overflow-x: scroll;;
+            scrollbar-width: 5px;
+            scroll-padding: 5px;
+            padding: 5px 10px;
         }
         table {
             width: 100%;
             border-spacing: 0;
+            line-height: 1.1;
+            border-collapse: collapse;
+
             th {
                 padding: 10px 0;
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 700;
+                line-height: 1.4;
                 border-bottom: 1px solid $white;
 
                 @include mobile{
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
 

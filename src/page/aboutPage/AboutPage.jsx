@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from '../../assets/aboutImage.webp'
+import Imgmob from '../../assets/aboutpagemobile.webp'
 import './../../style/pageStyle.scss'
 import { useTranslation } from 'react-i18next';
 import Banner from '../../components/Banner/Banner'
@@ -16,6 +17,7 @@ const AboutPage = () => {
       description={t("seoDescriptionAbout")}/>
       <Banner
       img={Img}
+      imgmob={Imgmob}
       alt="coal"
       title={t("titleAbout")}/>
       <RichText

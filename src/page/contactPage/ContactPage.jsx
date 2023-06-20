@@ -11,9 +11,9 @@ const ContactPage = () => {
     <Seo
     title={t("seoTitleContact")}
     description={t("seoDescriptionContact")}/>
-    <ContactInfo
+    {/* <ContactInfo
     contact={t("contact")}
-    contactText={t("contactText")}/>
+    contactText={t("contactText")}/> */}
     <Contact
     contactForm={t("contactForm")}
     contact={t("contact")}
